@@ -1,0 +1,94 @@
+.headerContent {
+    width: 100%;
+    height: 88px;
+    background-color: var(--PrimaryColorHeader);
+
+    border: 0.1px solid var(--SecondaryColorHeader);
+    
+    border-top: none;
+    border-right: none;
+    border-left: none;
+
+    justify-content: center;
+    align-items: center;
+
+    display: flex;
+}
+
+.content {
+    width: 79%;
+    display: flex;
+    align-items: center;
+}
+
+.content img {
+    width: 20%;
+}
+
+.contentLinks{
+    width: 70%;
+    height: 100%;
+    padding-left: 10%;
+    display: flex;
+    margin: unset;
+}
+
+.contentLinks > a{
+    text-decoration: none;
+    font-size: 1rem;
+    padding-right: 30px;
+    color: var(--LinkColorHeader);
+}
+
+.contentLinks > a:hover{
+    color: white;
+}
+
+.actionButtons{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.actionButtons a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px 25px;
+}
+
+.actionButtons button {
+    background-color: var(--SecondaryColor);
+
+    border: none;
+    height: unset;
+    color: white;
+
+    padding: 12px 25px;
+    font-weight: bold;
+
+    border: 0;
+    cursor: pointer;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+
+    text-transform: uppercase;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+@media only screen and (max-width: 1120px) {
+    .contentLinks > a{
+        display: none;
+    }
+
+    .content img {
+        width: 150px;
+    }
+}
+
